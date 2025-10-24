@@ -23,17 +23,17 @@
     "correctAnswer": "c",
     "difficulty": "intermediate"
   },
-  {
-    "question": "3. The ideal component of the reverse base current ($I_{b,ideal}$) is modeled as the transport current ($I_e \approx IS \cdot e^{V_{bc}/(NR \cdot V_T)}$) divided by what parameter?",
-    "answers": {
-      "a": "`BF` (Forward Beta)",
-      "b": "`BR` (Reverse Beta)",
-      "c": "`NE` (B-E Leakage Coefficient)",
-      "d": "`IKR` (Reverse Knee Current)"
-    },
-    "correctAnswer": "b",
-    "difficulty": "intermediate"
+{
+  "question": "3. The ideal component of the reverse base current is modeled as the ideal reverse transport current ($I_e$) divided by what SPICE parameter?",
+  "answers": {
+    "a": "`BF` (Forward Beta)",
+    "b": "`BR` (Reverse Beta)",
+    "c": "`NE` (B-E Leakage Coefficient)",
+    "d": "`IKR` (Reverse Knee Current)"
   },
+  "correctAnswer": "b",
+  "difficulty": "intermediate"
+}
   {
     "question": "4. An extracted value of `NC` (B-C Leakage Emission Coefficient) of approximately 2.0 suggests that the low-current $I_b$ is dominated by what?",
     "answers": {
