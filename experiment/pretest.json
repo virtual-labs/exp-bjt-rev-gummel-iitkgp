@@ -1,116 +1,115 @@
   {
 	  "version": 2.0,
   "questions": [
-      {
-    "question": "1. Why is the Transport Saturation Current (`IS`) extracted from the reverse Gummel plot (from $I_e$) identical to the one from the forward Gummel plot (from $I_c$)?",
-    "answers": {
-      "a": "This is just a coincidence.",
-      "b": "It is required by the Ebers-Moll reciprocity principle.",
-      "c": "They are not identical; they are `ISF` and `ISR`.",
-      "d": "It is only true if `BF` = `BR`."
+     {
+      "question": "1. Why is the Transport Saturation Current (`IS`) found using the reverse Gummel plot identical to the one found using the forward Gummel plot?",
+      "answers": {
+        "a": "This is just a coincidence.",
+        "b": "It is required by the Ebers-Moll reciprocity principle.",
+        "c": "They are not identical; the parameters are different.",
+        "d": "It is only true if the forward and reverse betas are equal."
+      },
+      "correctAnswer": "b",
+      "difficulty": "advanced"
     },
-    "correctAnswer": "b",
-    "difficulty": "advanced"
-  },
-  {
-    "question": "2. How does the magnitude of `ISC` (B-C Leakage Saturation Current) typically compare to `ISE` (B-E Leakage Saturation Current) in a standard BJT?",
-    "answers": {
-      "a": "`ISC` is much smaller than `ISE`.",
-      "b": "`ISC` is approximately equal to `ISE`.",
-      "c": "`ISC` is significantly larger than `ISE`.",
-      "d": "`ISC` is always zero."
+    {
+      "question": "2. How does the magnitude of the Base-Collector Leakage Saturation Current (`ISC`) typically compare to the Base-Emitter Leakage Saturation Current (`ISE`) in a standard BJT?",
+      "answers": {
+        "a": "The base-collector leakage (`ISC`) is much smaller than the base-emitter leakage (`ISE`).",
+        "b": "The base-collector leakage (`ISC`) is approximately equal to the base-emitter leakage (`ISE`).",
+        "c": "The base-collector leakage (`ISC`) is significantly larger than the base-emitter leakage (`ISE`).",
+        "d": "The base-collector leakage (`ISC`) is always zero."
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
     },
-    "correctAnswer": "c",
-    "difficulty": "intermediate"
-  },
-{
-  "question": "3. The ideal component of the reverse base current is modeled as the ideal reverse transport current ($I_e$) divided by what SPICE parameter?",
-  "answers": {
-    "a": "`BF` (Forward Beta)",
-    "b": "`BR` (Reverse Beta)",
-    "c": "`NE` (B-E Leakage Coefficient)",
-    "d": "`IKR` (Reverse Knee Current)"
-  },
-  "correctAnswer": "b",
-  "difficulty": "intermediate"
-}
-  {
-    "question": "4. An extracted value of `NC` (B-C Leakage Emission Coefficient) of approximately 2.0 suggests that the low-current $I_b$ is dominated by what?",
-    "answers": {
-      "a": "Ideal minority carrier diffusion",
-      "b": "High-level injection",
-      "c": "Parasitic collector resistance",
-      "d": "Recombination in the base-collector space-charge region"
+    {
+      "question": "3. The ideal component of the reverse base current is modeled as the ideal reverse transport current (from the emitter) divided by what SPICE parameter?",
+      "answers": {
+        "a": "`BF` (Forward Beta)",
+        "b": "`BR` (Reverse Beta)",
+        "c": "`NE` (B-E Leakage Coefficient)",
+        "d": "`IKR` (Reverse Knee Current)"
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
     },
-    "correctAnswer": "d",
-    "difficulty": "intermediate"
-  },
-  {
-    "question": "5. What is the primary reason for performing a reverse Gummel measurement to extract parameters like `BR`, `ISC`, `NC`, and `IKR`?",
-    "answers": {
-      "a": "To accurately model the BJT's behavior in the forward-active region.",
-      "b": "To accurately model the BJT's behavior in the saturation and reverse-active regions.",
-      "c": "To calculate the temperature dependence of the BJT.",
-      "d": "To determine the forward Early voltage (`VAF`)."
+    {
+      "question": "4. An extracted value for the Base-Collector Leakage Emission Coefficient (`NC`) of approximately two suggests that the low-current base current is dominated by what?",
+      "answers": {
+        "a": "Ideal minority carrier diffusion",
+        "b": "High-level injection",
+        "c": "Parasitic collector resistance",
+        "d": "Recombination in the base-collector space-charge region"
+      },
+      "correctAnswer": "d",
+      "difficulty": "intermediate"
     },
-    "correctAnswer": "b",
-    "difficulty": "intermediate"
-  },
-  {
-    "question": "6. How does the magnitude of `IKR` (Reverse High-Injection Knee Current) typically compare to `IKF` (Forward High-Injection Knee Current)?",
-    "answers": {
-      "a": "`IKR` is much larger than `IKF`",
-      "b": "`IKR` is much smaller than `IKF`",
-      "c": "`IKR` is approximately equal to `IKF`",
-      "d": "`IKR` is equal to `IS`"
+    {
+      "question": "5. What is the primary reason for performing a reverse Gummel measurement to extract parameters like `BR`, `ISC`, `NC`, and `IKR`?",
+      "answers": {
+        "a": "To accurately model the BJT's behavior in the forward-active region.",
+        "b": "To accurately model the BJT's behavior in the saturation and reverse-active regions.",
+        "c": "To calculate the temperature dependence of the BJT.",
+        "d": "To determine the forward Early voltage (`VAF`)."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
     },
-    "correctAnswer": "b",
-    "difficulty": "intermediate"
-  },
-  {
-    "question": "7. If a BJT were perfectly symmetrical (i.e., the emitter and collector were identical), what would be the expected value of the reverse beta, `BR`?",
-    "answers": {
-      "a": "It would be zero.",
-      "b": "It would be infinite.",
-      "c": "It would be equal to the forward beta, `BF`.",
-      "d": "It would be equal to 1."
+    {
+      "question": "6. How does the magnitude of the Reverse High-Injection Knee Current (`IKR`) typically compare to the Forward High-Injection Knee Current (`IKF`)?",
+      "answers": {
+        "a": "The reverse knee current is much larger than the forward one.",
+        "b": "The reverse knee current is much smaller than the forward one.",
+        "c": "The reverse knee current is approximately equal to the forward one.",
+        "d": "The reverse knee current is equal to the transport saturation current."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
     },
-    "correctAnswer": "c",
-    "difficulty": "intermediate"
-  },
-  {
-    "question": "8. What physical characteristic of a modern BJT is the primary reason that `BR` (Reverse Beta) is much smaller than `BF` (Forward Beta)?",
-    "answers": {
-      "a": "The base is very thin.",
-      "b": "The base-emitter junction area is very large.",
-      "c": "The emitter doping is much heavier than the collector doping.",
-      "d": "The collector resistance (`RC`) is very small."
+    {
+      "question": "7. If a BJT were perfectly symmetrical (i.e., the emitter and collector were identical), what would be the expected value of the reverse beta, `BR`?",
+      "answers": {
+        "a": "It would be zero.",
+        "b": "It would be infinite.",
+        "c": "It would be equal to the forward beta, `BF`.",
+        "d": "It would be equal to 1."
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
     },
-    "correctAnswer": "c",
-    "difficulty": "advanced"
-  },
-  {
-    "question": "9. On the reverse Gummel plot, what does a low value of `BR` (e.g., `BR` = 2) look like graphically?",
-    "answers": {
-      "a": "The $log(I_e)$ and $log(I_b)$ curves are very far apart.",
-      "b": "The $log(I_e)$ and $log(I_b)$ curves are very close together in the ideal region.",
-      "c": "The $log(I_e)$ curve has a very steep slope.",
-      "d": "The $log(I_b)$ curve has a slope of 1."
+    {
+      "question": "8. What physical characteristic of a modern BJT is the primary reason that the Reverse Beta (`BR`) is much smaller than the Forward Beta (`BF`)?",
+      "answers": {
+        "a": "The base is very thin.",
+        "b": "The base-emitter junction area is very large.",
+        "c": "The emitter doping is much heavier than the collector doping.",
+        "d": "The collector resistance (`RC`) is very small."
+      },
+      "correctAnswer": "c",
+      "difficulty": "advanced"
     },
-    "correctAnswer": "b",
-    "difficulty": "Beginner"
-  },
-  {
-    "question": "10. In the high-current region of a reverse Gummel plot, the voltage drop across which parasitic resistor becomes dominant and causes $I_c$ (total current) to roll off?",
-    "answers": {
-      "a": "`RE` (Emitter Resistance)",
-      "b": "`RC` (Collector Resistance)",
-      "c": "`RB` (Base Resistance)",
-      "d": "The internal base-emitter resistance"
+    {
+      "question": "9. On the reverse Gummel plot, what does a low value of Reverse Beta (`BR`) look like graphically?",
+      "answers": {
+        "a": "The logarithmic emitter and base current curves are very far apart.",
+        "b": "The logarithmic emitter and base current curves are very close together in the ideal region.",
+        "c": "The logarithmic emitter current curve has a very steep slope.",
+        "d": "The logarithmic base current curve has an ideal slope."
+      },
+      "correctAnswer": "b",
+      "difficulty": "Beginner"
     },
-    "correctAnswer": "b",
-    "difficulty": "advanced"
-  }
-
+    {
+      "question": "10. In the high-current region of a reverse Gummel plot, the voltage drop across which parasitic resistor becomes dominant and causes the emitter current to roll off?",
+      "answers": {
+        "a": "`RE` (Emitter Resistance)",
+        "b": "`RC` (Collector Resistance)",
+        "c": "`RB` (Base Resistance)",
+        "d": "The internal base-emitter resistance"
+      },
+      "correctAnswer": "b",
+      "difficulty": "advanced"
+    }
   ]
 }
