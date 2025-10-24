@@ -98,7 +98,7 @@
       "d": "The $log(I_b)$ curve has a slope of 1."
     },
     "correctAnswer": "b",
-    "difficulty": "intermediate"
+    "difficulty": "Beginner"
   },
   {
     "question": "10. In the high-current region of a reverse Gummel plot, the voltage drop across which parasitic resistor becomes dominant and causes $I_c$ (total current) to roll off?",
