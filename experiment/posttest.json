@@ -1,39 +1,117 @@
-{
-  "version": 2.0,
+
+  {
+	  "version": 2.0,
   "questions": [
-    {
-      "question": "This is a Sample Question 1?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
+      {
+    "question": "1. What two currents are plotted against $V_{bc}$ in a standard reverse Gummel plot?",
+    "answers": {
+      "a": "Collector Current ($I_c$) and Base Current ($I_b$)",
+      "b": "Emitter Current ($I_e$) and Collector Current ($I_c$)",
+      "c": "Emitter Current ($I_e$) and Base Current ($I_b$)",
+      "d": "Collector Current ($I_c$) and Emitter Current ($I_e$)"
     },
-    {
-      "question": "This is a Sample Question 2?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "c",
-      "difficulty": "beginner"
-    }
+    "correctAnswer": "c",
+    "difficulty": "beginner"
+  },
+  {
+    "question": "2. What is the standard bias condition for the base-emitter junction ($V_{be}$) when measuring a reverse Gummel plot?",
+    "answers": {
+      "a": "$V_{be}$ is swept along with $V_{bc}$",
+      "b": "$V_{be}$ is held at a high forward bias (e.g., 0.7V)",
+      "c": "$V_{be}$ is held at 0V (shorted)",
+      "d": "$V_{be}$ is left open-circuit"
+    },
+    "correctAnswer": "c",
+    "difficulty": "beginner"
+  },
+  {
+    "question": "3. By extrapolating the ideal (mid-current) $log(I_e)$ curve back to $V_{bc} = 0$, which fundamental Gummel-Poon parameter is extracted?",
+    "answers": {
+      "a": "`BR` (Ideal Reverse Beta)",
+      "b": "`ISC` (B-C Leakage Saturation Current)",
+      "c": "`IS` (Transport Saturation Current)",
+      "d": "`IKR` (Reverse High-Injection Knee)"
+    },
+    "correctAnswer": "c",
+    "difficulty": "intermediate"
+  },
+  {
+    "question": "4. The parameter `BR` (Ideal Maximum Reverse Beta) is extracted from the reverse Gummel plot by:",
+    "answers": {
+      "a": "Finding the ratio $I_e / I_b$ in the ideal region where their log plots are parallel.",
+      "b": "Extrapolating the $log(I_b)$ curve to $V_{bc} = 0$.",
+      "c": "Finding the slope of the $log(I_e)$ curve in the ideal region.",
+      "d": "Finding the ratio $I_e / I_b$ in the high-current (roll-off) region."
+    },
+    "correctAnswer": "a",
+    "difficulty": "intermediate"
+  },
+  {
+    "question": "5. Which SPICE parameter models the *magnitude* of the non-ideal base-collector recombination current, which dominates the $I_b$ curve at low $V_{bc}$?",
+    "answers": {
+      "a": "`ISE` (B-E Leakage Saturation Current)",
+      "b": "`ISC` (B-C Leakage Saturation Current)",
+      "c": "`IS` (Transport Saturation Current)",
+      "d": "`IKR` (Reverse High-Injection Knee)"
+    },
+    "correctAnswer": "b",
+    "difficulty": "intermediate"
+  },
+  {
+    "question": "6. The ideality factor (slope) of the non-ideal base current at low $V_{bc}$ is modeled by which parameter?",
+    "answers": {
+      "a": "`NF` (Forward Emission Coefficient)",
+      "b": "`NE` (B-E Leakage Emission Coefficient)",
+      "c": "`NR` (Reverse Emission Coefficient)",
+      "d": "`NC` (B-C Leakage Emission Coefficient)"
+    },
+    "correctAnswer": "d",
+    "difficulty": "intermediate"
+  },
+  {
+    "question": "7. The slope of the ideal $log(I_e)$ vs. $V_{bc}$ curve (ideality factor) is primarily determined by which parameter?",
+    "answers": {
+      "a": "`NR` (Reverse Emission Coefficient)",
+      "b": "`NF` (Forward Emission Coefficient)",
+      "c": "`BR` (Reverse Beta)",
+      "d": "`NC` (B-C Leakage Emission Coefficient)"
+    },
+    "correctAnswer": "a",
+    "difficulty": "beginner"
+  },
+  {
+    "question": "8. For a typical, asymmetrical BJT, how does the extracted Ideal Reverse Beta (`BR`) compare to the Ideal Forward Beta (`BF`)?",
+    "answers": {
+      "a": "`BR` is much larger than `BF`.",
+      "b": "`BR` is approximately equal to `BF`.",
+      "c": "`BR` is much smaller than `BF`.",
+      "d": "`BR` is always equal to 1."
+    },
+    "correctAnswer": "c",
+    "difficulty": "beginner"
+  },
+  {
+    "question": "9. The roll-off (bending) of the $log(I_e)$ curve at high currents is modeled by the `IKR` parameter, which accounts for what physical effect?",
+    "answers": {
+      "a": "High-level injection in the base (in reverse mode)",
+      "b": "Avalanche breakdown in the collector",
+      "c": "The Early Effect (base-width modulation)",
+      "d": "Low-level recombination in the B-C space-charge region"
+    },
+    "correctAnswer": "a",
+    "difficulty": "intermediate"
+  },
+  {
+    "question": "10. At high currents in the reverse Gummel plot, both $I_e$ and $I_b$ curves roll off due to parasitic voltage drops across which *two* resistors?",
+    "answers": {
+      "a": "`RE` (Emitter) and `RB` (Base)",
+      "b": "`RE` (Emitter) and `RC` (Collector)",
+      "c": "`RB` (Base) and `RC` (Collector)",
+      "d": "Only `RB` (Base)"
+    },
+    "correctAnswer": "c",
+    "difficulty": "advanced"
+  }
+
   ]
 }
