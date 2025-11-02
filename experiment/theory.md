@@ -3,7 +3,7 @@
 BJT Parameter Extraction from Reverse Gummel Plots
 <div align="center">
     <img src="images/th3.png" alt="Threshold Voltage and Inversion charge">  
-      <p><strong>Fig. 1. Threshold Voltage and Inversion charge</strong></p>
+      <p><strong>Fig. 1. Reverse Gummel Plot & Parameter Extraction</strong></p>
 </div>
 
 ## Introduction
